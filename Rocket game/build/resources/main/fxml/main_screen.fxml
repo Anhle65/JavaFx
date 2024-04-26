@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng201.tut2.gui.MainScreenController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="124.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="109.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Hello">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="rocket3" mnemonicParsing="false" prefHeight="99.0" prefWidth="167.0" text="Rocket 3" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="rocket2" mnemonicParsing="false" prefHeight="98.0" prefWidth="168.0" text="Rocket 2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="rocket1" layoutX="410.0" layoutY="93.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="167.0" text="Rocket 1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fuel:" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cleanliness:" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" GridPane.rowIndex="2" GridPane.valignment="BASELINE">
+         <GridPane.margin>
+            <Insets left="15.0" top="20.0" />
+         </GridPane.margin>
+      </Text>
+      <Text layoutX="25.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BASELINE">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fuel:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cleanliness:" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fuel:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cleanliness:" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="BASELINE">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Text>
+      <Button fx:id="cleaningButton" mnemonicParsing="false" onAction="#onCleanedClicked" prefHeight="25.0" prefWidth="166.0" text="Clean Rocket" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="refuelingButton" mnemonicParsing="false" onAction="#onRefueledClicked" prefHeight="25.0" prefWidth="164.0" text="Refuel Rocket" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#onQuitClicked" prefHeight="25.0" prefWidth="169.0" text="Quit" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="15.0" />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="rocket1Name" text="Label" GridPane.rowIndex="2" GridPane.valignment="BASELINE">
+         <GridPane.margin>
+            <Insets left="55.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="rocket1Fuel" layoutX="70.0" layoutY="188.0" text="Label" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="45.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="rocket1State" text="Label" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="80.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="rocket2State" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <padding>
+            <Insets bottom="20.0" left="80.0" />
+         </padding>
+      </Label>
+      <Label fx:id="rocket2Fuel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="45.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="rocket2Name" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BASELINE">
+         <padding>
+            <Insets left="55.0" />
+         </padding>
+      </Label>
+      <Label fx:id="rocket3State" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="80.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="rocket3Name" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="BASELINE">
+         <padding>
+            <Insets left="55.0" />
+         </padding>
+      </Label>
+      <Label fx:id="rocket3Fuel" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="45.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="playerName" text="Label">
+         <GridPane.margin>
+            <Insets left="45.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>
